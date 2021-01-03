@@ -8,6 +8,7 @@
         "build": "npx truffle compile",
         "ganache": "npx ganache-cli --gasLimit 0xfffffffffff -e 10000000 --port 8545",
         "test": "npx truffle test",
+        "smoketest": "node scripts/smoketest.js",
         "deploy:kovan": "npx truffle migrate --network kovan --reset",
         "dev:lint": "npx eslint . && npx solhint contracts/*.sol",
         "dev:contract-size": "npx truffle run contract-size",
